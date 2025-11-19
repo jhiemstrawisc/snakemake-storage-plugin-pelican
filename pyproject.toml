@@ -2,15 +2,28 @@
 name = "snakemake-storage-plugin-pelican"
 version = "0.1.1"
 description = "A Snakemake Storage Plugin for Pelican Federations"
+repository = "https://github.com/PelicanPlatform/snakemake-storage-plugin-pelican.git"
+documentation = "https://snakemake.github.io/snakemake-plugin-catalog/plugins/storage/pelican.html"
 readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["snakemake", "storage-plugin", "pelican", "pelicanfs"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
 requires-python = ">=3.12,<4.0"
 dependencies = [
 	"snakemake-interface-common (>=1.21.0,<2.0.0)",
 	"snakemake-interface-storage-plugins (>=4.2.1,<5.0.0)",
 	"pelicanfs (>=1.2.3)"
 ]
-repository = "https://github.com/PelicanPlatform/snakemake-storage-plugin-pelican"
-documentation = "https://snakemake.github.io/snakemake-plugin-catalog/plugins/storage/pelican.html"
+
 [[project.authors]]
 name = "Justin Hiemstra"
 email = "jhiemstra@wisc.edu"
